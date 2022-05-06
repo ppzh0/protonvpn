@@ -29,6 +29,10 @@ article {
 
 summary>span::selection {
     user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-drag: none;
+    -o-user-drag: none;
+    -moz-user-drag: none;
 }
 
 summary::marker {
