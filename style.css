@@ -90,6 +90,14 @@ img {
     img {
         width: 100%;
     }
+
+}
+
+@media (max-width:440px) {
+    .DownloadLinks {
+        margin: auto !important;
+    }
+    
 }
 
 .fHeader {
