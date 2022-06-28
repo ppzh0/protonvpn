@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -8,88 +10,95 @@
     --ic-o-east: url(./outline_east_black_24dp.png);
 }
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-article[class="head"] {
+.contentHeadCenter {
     display: flex;
     justify-content: center;
-}
-
-article {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.content img {
-    margin-bottom: 15px;
-}
-
-summary>span::selection {
-    user-select: none;
-    -webkit-user-drag: none;
-    -ms-user-drag: none;
-    -o-user-drag: none;
-    -moz-user-drag: none;
-}
-
-summary::marker {
-    content: "";
-}
-
-details>p {
-    text-align: center;
-}
-
-details {
-    --webkit-user-select: none;
-    --moz-user-select: none;
-    --ms-user-select: none;
-    padding: 1.234rem;
-    margin-top: 20px;
-    background-color: var(--bg-trs-b);
-    border: 1px solid var(--bs-boc-b);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-}
-
-details p span {
+.DownloadLinks {
     display: inline-block;
-    margin-top: 1.4rem;
-    margin-bottom: 0.343rem;
+    padding: 10px;
+    margin: 5px 3rem;
 }
 
-#caution {
-    text-align: center;
-}
-
-#caution>summary {
-    font-weight: bold;
-    color: #f00;
-    font-size: 1.5rem;
-}
-
-#MidMan {
-    text-align: left;
+.DownloadLinks:hover {
+    border: 5px solid cyan;
+    transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 #Note {
-    text-align: center;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 15px;
     background-color: #000;
-    color: #fff;
+    color: yellow;
     padding: 5px 4px;
+    border-radius: 5px;
     font-weight: bolder;
 }
 
 img {
-    width: 320px;
+    width: clamp(100px, 100%, 500px);
 }
 
-@media only screen and (min-width:500px) and (max-width:1024px) {
+@media only screen and (min-width:500px) {
     img {
-        width: 700px;
+        width: 100%;
     }
+}
+
+.fHeader {
+    border-bottom: 2px dashed red;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
