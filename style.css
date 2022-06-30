@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --bg-trs-b: rgba(0, 0, 0, 0.150);
-    --bs-boc-b: rgba(0, 0, 0, 0.120);
-    --ic-o-east: url(./outline_east_black_24dp.png);
-}
 
 @font-face {
     font-family: 'Material Icons';
