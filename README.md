@@ -12,3 +12,5 @@ as you knows myanmar's internet network is not safe anymore and the ISP block th
 
 > icons - [SVGRepo](https:://www.svgrepo.com)  
 > Style Inspiration - [ProtonVPN Website](https://protonvpn.com)
+
+*325 days, hell yeah*
