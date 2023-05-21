@@ -1,0 +1,234 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    /* outline: 3px solid rgba(0, 213, 255, 0.34); */
+}
+
+@font-face {
+    font-family: Light;
+    src: url(../fonts/futura/Light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Medium;
+    src: url(../fonts/futura/Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: Round;
+    src: url(../fonts/futura/Round-Demi-Italic.woff2) format('woff2');
+}
+
+/* Button from ProtonVPN official website */
+code {
+    cursor: pointer;
+    font-size: 16px;
+    background: linear-gradient(122.32deg, #6d4aff 30.66%, #31d1d0 93.8%);
+    text-shadow: 0 1px 5px #00000066;
+    color: #fff;
+    border-radius: 2.5rem;
+    border: 0 solid transparent;
+    padding: 0.125rem 1.25rem !important;
+    line-height: 1.75rem;
+}
+
+code:hover {
+    color: #fff;
+    background: linear-gradient(122.32deg, #361d9c 30.66%, #1d8399 93.8%);
+    transition: .5s;
+}
+
+#note {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    color: yellow;
+    background: linear-gradient(122.32deg, #361d9c 30.66%, #1d8399 93.8%);
+
+}
+
+#note a {
+    color: yellow;
+}
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #35383d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #414449;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7289d7;
+}
+
+body {
+    font-family: Medium, Arial, Helvetica, sans-serif;
+    background: linear-gradient(122.32deg, #cec7f0 32.4%, #6d49ff 60.3%);
+    min-height: 100vh;
+}
+
+body:not(#E) {
+    color: #fff;
+}
+
+/* heading & font */
+.gp-header {
+    text-align: center;
+    font-size: clamp(1.67rem, 2.5vw, 3.6rem);
+}
+
+small {
+    font-size: 13.333px;
+}
+
+.gp-header h2 {
+    font-size: clamp(1rem, 2.2vh, 2.5rem);
+}
+
+/* main box */
+.box-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* responsive image */
+.box-img img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    /* object-fit: cover;
+    object-position: bottom; */
+}
+
+.gp-btn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 2.4rem;
+}
+
+
+.i1, .i4 {
+    grid-column-start: span 2;
+}
+
+.i5 {
+    text-align: center;
+    grid-column-start: span 3;
+}
+
+.btn {
+    padding: clamp(.5rem, .9rem, 1.3rem) clamp(1rem, 1.4rem, 2rem);
+    text-align: center;
+    border-radius: 6px;
+    background: linear-gradient(123.34deg, #7a5cfed1 30%, #8c72fcd1 60%);
+    /* border: 2px solid #6e4affd7; */
+    color: #000;
+    transition: all .4s ease-out;
+}
+
+.btn:hover {
+    background-color: #00000020;
+    color: #fff;
+}
+
+.btn::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+
+    /* just to be sure. It doesn't apply to `::before` if I add this from here */
+    /* it says `float: left` is disabled due to `display: inline-block` property */
+
+    /* background-size: contain;
+    float: left;
+    margin-right: 10px; */
+}
+
+.windows::before {
+    background: url(../icons/windows.svg) no-repeat;
+}
+
+.android::before {
+    background: url(../icons/android.svg) no-repeat;
+}
+
+.mac::before {
+    background: url(../icons/mac.svg);
+}
+
+.iOS::before {
+    background: url(../icons/ios.svg) no-repeat;
+}
+
+.windows::before,
+.android::before,
+.mac::before,
+.iOS::before {
+    /* so, I had to make this shit. fuk */
+    background-size: contain;
+    float: left;
+    margin-right: 10px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(50%, 80%, 100%);
+    margin: 3rem auto .3rem;
+    font-family: Light, Arial, Helvetica, sans-serif;
+}
+
+footer h3 {
+    margin-bottom: 0;
+}
+
+summary::marker {
+    content: "©";
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+#mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600.99px) {
+    .gp-btn {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .btn {
+        padding: clamp(.3rem, .7rem, 1rem) clamp(.6rem, 1rem, 1.4rem);
+    }
+
+    .i1, .i4 {
+        grid-column-start: span 3;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    ol {
+        margin-left: 1rem;
+    }
+
+    #desktop {
+        display: none;
+    }
+}
