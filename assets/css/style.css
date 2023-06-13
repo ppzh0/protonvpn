@@ -71,11 +71,19 @@ code:hover {
 body {
     font-family: Medium, Arial, Helvetica, sans-serif;
     background: linear-gradient(122.32deg, #cec7f0 32.4%, #6d49ff 60.3%);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background-size: 400% 400%;
+    animation: slip 15s ease infinite;
     min-height: 100vh;
 }
 
 body:not(#E) {
     color: #fff;
+}
+
+.mid-air {
+    margin: auto;
+    width: min(100%, calc(70% + 100px));
 }
 
 /* heading & font */
@@ -131,11 +139,12 @@ small {
     background: linear-gradient(123.34deg, #7a5cfed1 30%, #8c72fcd1 60%);
     /* border: 2px solid #6e4affd7; */
     color: #000;
-    transition: all .4s ease-out;
+    animation: slip 5s ease infinite;
+    background-size: 200% 200%;
+    /* transition: all .4s ease-out; */
 }
 
 .btn:hover {
-    background-color: #00000020;
     color: #fff;
 }
 
@@ -231,4 +240,38 @@ li {
     #desktop {
         display: none;
     }
+}
+
+@-webkit-keyframes slip {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-moz-keyframes slip {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes slip { 
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
