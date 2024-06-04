@@ -5,24 +5,10 @@
     /* outline: 3px solid rgba(0, 213, 255, 0.34); */
 }
 
-@font-face {
-    font-family: Light;
-    src: url(../fonts/futura/Light.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: Medium;
-    src: url(../fonts/futura/Medium.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: Round;
-    src: url(../fonts/futura/Round-Demi-Italic.woff2) format('woff2');
-}
-
 /* Button from ProtonVPN official website */
 code {
     cursor: pointer;
+    display: inline-block;
     font-size: 16px;
     background: linear-gradient(122.32deg, #6d4aff 30.66%, #31d1d0 93.8%);
     text-shadow: 0 1px 5px #00000066;
