@@ -2,81 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download ProtonVPN - InnoTech Solutions</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Favicon From Official Website -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Download ProtonVPN</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/1821f8843e.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <main class="flex">
-        <article>
-            <section class="gp-header">
-                <small>InnoTech Solutions <!-- ChatGPT did it again --></small>
-                <h1>Download ProtonVPN</h1>
-                <h2 id="note">You need an account to use the VPN! <br> See <a href="instructions.html">instructions</a></h2>
-            </section>
-            <section class="box-main">
-                <section class="box-img">
-                    <img src="assets/img/home-section-1.png" alt="ProtonVPN interface">
-                </section>
-                <section class="gp-btn">
-                    <a href="https://www.mediafire.com/file/67kktngmkvo26wf/ProtonVPN_win_v2.4.3.exe/file" target="_blank" class="i1 btn windows">Windows</a>
-                    <a href="https://www.mediafire.com/file/arjh15pp56qgjfl/ProtonVPN_mac_v1.9.6.dmg/file" target="_blank" class="i2 btn mac">Mac</a>
-                    <a href="https://apps.apple.com/us/app/proton-vpn-fast-secure/id1437005085" target="_blank" class="i3 btn iOS">iOS</a>
-                    <a href="https://www.mediafire.com/file/pg8rp3mzu4dy0nh/ProtonVPN-4.7.41.0.apk/file" target="_blank" class="i4 btn android">Android</a>
-                    <section class="i5">
-                        <h3>Why ProtonVPN</h3>
-                        <p>ProtonVPN has no advertisements and it's super fast and easy to use</p>
-                    </section>
-                </section>
-            </section>
-        </article>
-    </main>
-    <!-- for dev, Just ignore this footer section, not for users -->
-    <footer>
-        <h3>Disclaimer</h3>
-        <details>
-            <summary>
-                The <em>InnoTech Solutions</em> website provides an alternative download source for Proton VPN
-                software for users who are unable to access <a href="https://protonvpn.com" target="_blank" rel="noopener noreferrer">the official Proton VPN website</a>. However, it is important to
-                note the following:
-            </summary>
-            <p>
-            <ol>
-                <li><strong><em>Third-Party Source:</em></strong> <em>InnoTech Solutions</em> is an independent platform and is not
-                    affiliated with Proton VPN or its official website. We do not own or develop the Proton VPN
-                    software. Our platform simply provides an alternative download link for users' convenience.</li>
+	<!-- 
+		shitty html, that's why i don't use bootstrap
+		but that's easier and efficient
+	-->
+	<main class="container-fluid text-black text-center">
+		<h1 class="display-2 mb-5 fw-bold">Download ProtonVPN</h1>
+		<span class="display-6 fst-italic">You need <a href="instructions.html" class="link-underline-info">an account to use</a> the VPN service!</span>
+		<article class="container-fluid my-5">
+			<img src="assets/img/hero.png" alt="ProtonVPN Interface" class="img-fluid mb-4">
+			<span class="display-5 mt-5">Why ProtonVPN? Because it's <em>fast</em> and <em>free</em>!</span>
+			<img src="assets/img/multi-platform.png" alt="Multi-Platform Support" class="img-fluid mb-4">
+			<span class="display-5 mt-5">And it's multi-platform support!</span>
+		</article>
+		<aside class="my-5">
+			<div class="alert alert-info">All Downloadable File On This Site Is Hosted On MediaFire</div>
+			<span class="h5 d-block my-3">Packages Are Available For</span>
+			<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+				<a href="https://www.mediafire.com/file/pg8rp3mzu4dy0nh/ProtonVPN-4.7.41.0.apk/file"
+					class="btn btn-outline-primary">
+					<i class="fa fa-windows"></i> Windows
+				</a>
+				<a href="https://www.mediafire.com/file/l1ry19u42clmkez/ProtonVPN_mac_v4.3.0.dmg/file"
+					class="btn btn-outline-dark">
+					<i class="fa fa-apple"></i> macOS
+				</a>
+				<a href="https://apps.apple.com/us/app/proton-vpn-fast-secure/id1437005085"
+					class="btn btn-outline-secondary">
+					<i class="fa-brands fa-app-store-ios"></i> iOS
+				</a>
+				<a href="https://play.google.com/store/apps/details?id=ch.protonvpn.android"
+					class="btn btn-outline-success">
+					<i class="fa fa-android"></i> Android
+				</a>
+				<!-- <a href="" class="btn btn-outline-warning">
+					<i class="fa fa-linux"></i> Linux
+				</a> -->
+			</div>
+			<span class="h5 d-block my-3">Older Versions</span>
+			<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+				<a href="https://www.mediafire.com/file/67kktngmkvo26wf/ProtonVPN_win_v2.4.3.exe/file"
+					class="btn btn-outline-primary">
+					<i class="fa fa-windows"></i> Windows
+				</a>
+				<a href="https://www.mediafire.com/file/arjh15pp56qgjfl/ProtonVPN_mac_v1.9.6.dmg/file"
+					class="btn btn-outline-dark">
+					<i class="fa fa-apple"></i> macOS
+				</a>
+				<a href="https://protonvpn.en.uptodown.com/android/versions"
+					class="btn btn-outline-success">
+					<i class="fa fa-android"></i> Android
+				</a>
+			</div>
+			<span class="h5 d-block mt-5">For other platforms, refer to <a href="https://protonvpn.com" target="_blank" rel="noopener noreferrer">official ProtonVPN website</a>.</span>
 
-                <li><strong><em>Security and Authenticity:</em></strong> While we take measures to ensure the integrity of the software we
-                    provide, <em>InnoTech Solutions</em> cannot guarantee the authenticity, safety, or
-                    reliability of the downloaded Proton VPN software. Users should exercise caution and conduct their
-                    own due diligence before downloading and installing any software from our website.</li>
+		</aside>
+	</main>
 
-                <li><strong><em>Risks and Liabilities:</em></strong> By downloading and using the Proton VPN software from <strong>InnoTech
-                        Solutions</strong>, users acknowledge and accept the potential risks involved. <strong>InnoTech
-                        Solutions</strong> shall not be held responsible for any damages, losses, or consequences
-                    arising from the use of the software or any associated activities.</li>
-
-                <li><strong><em>Official Support:</em></strong> Users are encouraged to visit the official Proton VPN website for the most
-                    up-to-date information, support, and documentation related to the Proton VPN software.
-                    <em>InnoTech Solutions</em> does not provide any technical support or assistance for the
-                    software.
-                </li>
-
-                <li><strong><em>Legal Compliance:</em></strong> Users are solely responsible for complying with applicable laws, regulations, and
-                    licensing agreements when using the Proton VPN software downloaded from <strong>InnoTech
-                        Solutions</strong>. <em>InnoTech Solutions</em> does not endorse or support any illegal
-                    or unauthorized activities.</li>
-            </ol>
-                By downloading and using the Proton VPN software from <em>InnoTech Solutions</em>, users agree to
-                the terms and conditions outlined in this disclaimer.
-            </p>
-        </details>
-    </footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

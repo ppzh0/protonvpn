@@ -1,0 +1,47 @@
+<!-- for dev, Just ignore this footer section, not for users -->
+<footer>
+    <h3>Disclaimer</h3>
+        <details>
+            <summary>
+                The <em>InnoTech Solutions</em> website provides an alternative download source for Proton VPN
+                software for users who are unable to access <a href="https://protonvpn.com" target="_blank"
+                    rel="noopener noreferrer">the official Proton VPN website</a>. However, it is important to
+                note the following:
+            </summary>
+        <p>
+            <ol>
+                <li><strong><em>Third-Party Source:</em></strong> <em>InnoTech Solutions</em> is an independent platform
+                    and is not
+                    affiliated with Proton VPN or its official website. We do not own or develop the Proton VPN
+                    software. Our platform simply provides an alternative download link for users' convenience.</li>
+
+                <li><strong><em>Security and Authenticity:</em></strong> While we take measures to ensure the integrity
+                    of the software we
+                    provide, <em>InnoTech Solutions</em> cannot guarantee the authenticity, safety, or
+                    reliability of the downloaded Proton VPN software. Users should exercise caution and conduct their
+                    own due diligence before downloading and installing any software from our website.</li>
+
+                <li><strong><em>Risks and Liabilities:</em></strong> By downloading and using the Proton VPN software
+                    from <strong>InnoTech
+                        Solutions</strong>, users acknowledge and accept the potential risks involved. <strong>InnoTech
+                        Solutions</strong> shall not be held responsible for any damages, losses, or consequences
+                    arising from the use of the software or any associated activities.</li>
+
+                <li><strong><em>Official Support:</em></strong> Users are encouraged to visit the official Proton VPN
+                    website for the most
+                    up-to-date information, support, and documentation related to the Proton VPN software.
+                    <em>InnoTech Solutions</em> does not provide any technical support or assistance for the
+                    software.
+                </li>
+
+                <li><strong><em>Legal Compliance:</em></strong> Users are solely responsible for complying with
+                    applicable laws, regulations, and
+                    licensing agreements when using the Proton VPN software downloaded from <strong>InnoTech
+                        Solutions</strong>. <em>InnoTech Solutions</em> does not endorse or support any illegal
+                    or unauthorized activities.</li>
+            </ol>
+            By downloading and using the Proton VPN software from <em>InnoTech Solutions</em>, users agree to
+            the terms and conditions outlined in this disclaimer.
+        </p>
+    </details>
+</footer>
