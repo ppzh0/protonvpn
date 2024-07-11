@@ -58,18 +58,9 @@ body {
     font-family: Medium, Arial, Helvetica, sans-serif;
     background: linear-gradient(122.32deg, #aa6aff 32.4%, #6d49ff 60.3%);
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    background-size: 200% 200%;
+    background-size: 255% 255%;
     animation: slip 10s ease-in-out infinite;
     min-height: 100vh;
-}
-
-body:not(#E) {
-    color: #fff;
-}
-
-.mid-air {
-    margin: auto;
-    width: min(100%, calc(70% + 100px));
 }
 
 /* heading & font */
