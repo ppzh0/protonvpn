@@ -1,16 +1,17 @@
 # ProtonVPN
 ## ProtonVPN for Myanmar
-as you knows myanmar's internet network is not safe anymore and the ISP block the important services.
+As you knows myanmar's internet network is not safe anymore and the ISP block the important services. So I made a website consisting of resources to download a pretty secure and trusted VPN.
 
-## DEMO
+## Websites Domains
 [GitHub](https://ppzh0.github.io/protonvpn) |
-[Vercel](https://protonvpn.vercel.app/) |
-[Netlify](https://protonpvn.netlify.app) |
+[Vercel](https://iiap.vercel.app/) |
+[Netlify](https://iiap.netlify.app) |
 [W3 Space](https://ppzh0.w3spaces.com) 
 
-## Resources credits
+## resources credits
 
-> icons - [SVGRepo](https:://www.svgrepo.com)  
-> Style Inspiration - [ProtonVPN Website](https://protonvpn.com)
+<!-- icons - [SVGRepo](https:://www.svgrepo.com)   -->
+Images - [ProtonVPN Website](https://protonvpn.com)
 
-*325 days, hell yeah*
+## repository
+If you have something unsatisfied with domains, don't hesitate to make a pull request.
