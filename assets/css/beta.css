@@ -1,0 +1,157 @@
+@font-face {
+    font-family: DIN;
+    src: url(../fonts/DIN.ttf);
+}
+
+@font-face {
+    font-family: "Fira Code";
+    src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: DIN, Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2em;
+}
+
+.name {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+article {
+    grid-area: article;
+
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+
+aside {
+    grid-area: aside;
+
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 12px;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "article main aside"
+        "footer footer footer";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+
+    /* font-size: 18px; */
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    background-color: rgb(236 239 247);
+}
+
+/* main content */
+h3+img:not(img:last-child) {
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+/* download link buttons */
+ul,
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+ul li {
+    padding: 8px;
+}
+
+ul li a {
+    display: block;
+    padding: 8px 16px;
+    transition: all ease-in-out .3s;
+
+    &:hover {
+        background-color: rgb(109 74 255);
+        color: rgb(105 227 220);
+        border-radius: 6px;
+    }
+}
+
+/* footer | disclaimer section */
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    /* max-width: 600px; */
+}
+
+ol {
+    margin-bottom: 15px;
+    /* max-width: 600px; */
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+#mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #mobile {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    body {
+        display: grid;
+        grid-template-areas:
+            "main"
+            "aside"
+            "article"
+            "footer";
+        grid-template-columns: auto;
+        padding: 15px;
+
+        & main {
+            display: grid;
+            justify-items: center;
+
+            & img {
+                width: 95% !important;
+                border-bottom: none !important;
+            }
+        }
+    }
+}
