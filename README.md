@@ -8,11 +8,12 @@ As you knows myanmar's internet network is not safe anymore and the ISP block th
 [Netlify](https://iiap.netlify.app) |
 [W3 Space](https://ppzh0.w3spaces.com) 
 
-## resources credits
+## resources
 
 <!-- icons - [SVGRepo](https:://www.svgrepo.com)   -->
 - Images - [ProtonVPN](https://protonvpn.com) 
 - Image compression - [Image Resizer.com](https://imageresizer.com/image-compressor)
+- metadata [ahrefs blog](https://ahrefs.com/blog/open-graph-meta-tags/)
 
 ## repository
 If you have something unsatisfied with domains, don't hesitate to make a pull request.
