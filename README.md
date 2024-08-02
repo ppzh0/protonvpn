@@ -11,7 +11,8 @@ As you knows myanmar's internet network is not safe anymore and the ISP block th
 ## resources credits
 
 <!-- icons - [SVGRepo](https:://www.svgrepo.com)   -->
-Images - [ProtonVPN Website](https://protonvpn.com)
+- Images - [ProtonVPN](https://protonvpn.com) 
+- Image compression - [Image Resizer.com](https://imageresizer.com/image-compressor)
 
 ## repository
 If you have something unsatisfied with domains, don't hesitate to make a pull request.
