@@ -12,6 +12,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    transition: all .3s ease-in-out;
     font-family: DIN, Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 2em;
@@ -45,7 +46,8 @@ aside {
 main {
     grid-area: main;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1em;
 }
 
