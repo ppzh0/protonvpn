@@ -16,4 +16,4 @@ As you knows myanmar's internet network is not safe anymore and the ISP block th
 - metadata [ahrefs blog](https://ahrefs.com/blog/open-graph-meta-tags/)
 
 ## repository
-If you have something unsatisfied with domains, don't hesitate to make a pull request.
+If you have something unsatisfied with domains, don't hesitate to make a pull request or contact me on [Telegram](https://t.me/ppzh0).
