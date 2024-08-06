@@ -75,11 +75,6 @@ body {
 }
 
 /* main content */
-h3+img:not(img:last-child) {
-    padding-bottom: 15px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-}
-
 /* download link buttons */
 ul,
 ul li {
@@ -160,5 +155,13 @@ ol {
                 border-bottom: none !important;
             }
         }
+    }
+}
+
+/* applies same to all device and operating system */
+h5 {
+    font-family: serif !important;
+    & abbr {
+        font-family: serif !important;
     }
 }
