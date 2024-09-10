@@ -1,9 +1,4 @@
 @font-face {
-    font-family: DIN;
-    src: url(../fonts/DIN.ttf);
-}
-
-@font-face {
     font-family: "Fira Code";
     src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap);
 }
@@ -13,7 +8,8 @@
 *::after {
     box-sizing: border-box;
     transition: all .3s ease-in-out;
-    font-family: DIN, Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: normal;
     scroll-behavior: smooth;
     scroll-padding-top: 2em;
 }
