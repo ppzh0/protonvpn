@@ -3,6 +3,19 @@
     src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap);
 }
 
+/* start beta testing */
+
+details summary {
+    cursor: pointer;
+    transition: margin 150ms ease-out;
+}
+
+details[open] summary {
+    margin-bottom: 10px;
+}
+
+/* end beta testing */
+
 *,
 *::before,
 *::after {
@@ -103,6 +116,7 @@ footer {
     padding: 20px;
 }
 
+/* list for instructions */
 ol {
     margin-bottom: 15px;
 
@@ -116,11 +130,28 @@ ol {
     }
 }
 
+/* summary option */
+summary::marker,
+summary:hover {
+    content: none;
+    cursor: pointer;
+}
+
+summary {
+    user-select: none;
+    color: #6b705c;
+    text-align: center;
+}
+
+details[open] summary {
+    opacity: .2;
+}
+
 #mobile {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 50px) and (max-width: 480px) {
     #mobile {
         display: block;
     }
@@ -158,8 +189,20 @@ ol {
     }
 }
 
+@media screen and (min-width:481px) and (max-width: 860px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "main aside"
+            "article article"
+            "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px 15px;
+    }
+}
+
 /* applies the same to all device and operating system, hopefully */
-h5 {
+h5#copyrightNotice {
     font-family: serif !important;
 
     & abbr {
