@@ -109,6 +109,11 @@ ul li a {
     }
 }
 
+/* content ul and li */
+.content-linux a {
+    word-break: break-all;
+}
+
 /* footer | disclaimer section */
 footer {
     max-width: 800px;
@@ -208,4 +213,13 @@ h5#copyrightNotice {
     & abbr {
         font-family: serif !important;
     }
+}
+
+code {
+    font-family: "Fira Code";
+    padding: 4px 12px;
+}
+
+code.warning {
+    background-color: hsla(60, 100%, 50%, 0.664);
 }
