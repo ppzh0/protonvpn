@@ -22,7 +22,6 @@ details[open] summary {
     box-sizing: border-box;
     transition: all .3s ease-in-out;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: normal;
     scroll-behavior: smooth;
     scroll-padding-top: 2em;
 }
