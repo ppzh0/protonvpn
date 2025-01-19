@@ -1,224 +1,173 @@
-@font-face {
-    font-family: "Fira Code";
-    src: url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap);
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: hsl(231, 37%, 4%);
+        --background: hsl(227, 53%, 97%);
+        --primary: hsl(231, 68%, 54%);
+        --secondary: hsl(231, 83%, 74%);
+        --accent: hsl(231, 98%, 62%);
+        --warn: hsla(60, 100%, 50%, 0.757);
+
+        --special-link: hsla(0, 0%, 100%, 0.8);
+    }
 }
 
-/* start beta testing */
-
-details summary {
-    cursor: pointer;
-    transition: margin 150ms ease-out;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: hsl(233, 40%, 96%);
+        --background: hsla(231, 47%, 3%);
+        --primary: hsl(231, 68%, 46%);
+        --secondary: hsl(231, 83%, 26%);
+        --accent: hsl(231, 98%, 38%);
+        --warn: hsla(60, 100%, 58%, 0.705);
+    }
 }
-
-details[open] summary {
-    margin-bottom: 10px;
-}
-
-/* end beta testing */
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+
+    /* extra UI properties */
     transition: all .3s ease-in-out;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2em;
+    scroll-padding-top: 2rem;
+
+    /* https://www.reddit.com/r/webdev/comments/bk9ey2/do_you_prefer_websites_that_use_smoothscrolling/ */
+    /* some people don't agree on using smooth-scrolling */
+    /* scroll-behavior: smooth; */
+
+    /* outline: 1px solid green; */
 }
 
-.name {
-    font-family: "Fira Code", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-}
-
-.sub-name {
-    font-size: x-large;
-    justify-self: start;
-}
-
-article {
-    grid-area: article;
-
-    border-right: 1px solid rgba(0, 0, 0, 0.4);
-    padding: 5px;
-}
-
-aside {
-    grid-area: aside;
-
-    border-left: 1px solid rgba(0, 0, 0, 0.4);
-    padding: 12px;
-}
-
-main {
-    grid-area: main;
-
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-footer {
-    grid-area: footer;
-
-    border-top: 1px solid rgba(0, 0, 0, 0.4);
+a:link {
+    color: var(--accent);
 }
 
 body {
-    display: grid;
-    grid-template-areas:
-        "article main aside"
-        "footer footer footer";
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
 
-    /* font-size: 18px; */
-    line-height: 1.5;
-    text-rendering: optimizeLegibility;
-    background-color: rgb(236 239 247);
+    width: min(600px, calc(100% + 70px));
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
-/* main content */
-/* download link buttons */
+section {
+    margin-bottom: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Comfortaa';
+    font-weight: 700;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+    font-size: 4.210rem;
+}
+
+h2 {
+    font-size: 3.158rem;
+}
+
+h3 {
+    font-size: 2.369rem;
+}
+
+h4 {
+    font-size: 1.777rem;
+}
+
+h5 {
+    font-size: 1.333rem;
+}
+
+small {
+    font-size: 0.750rem;
+}
+
+/* link button styles */
 ul,
 ul li {
     list-style: none;
-    padding: 0;
-    margin: 0;
     padding-inline-start: 0;
 }
 
-ul li {
-    padding: 8px;
+section#sources ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
-ul li a {
+section#sources li a,
+.special-btn {
     display: block;
-    padding: 8px 16px;
-    transition: all ease-in-out .3s;
-
-    &:hover {
-        background-color: rgb(109 74 255);
-        color: rgb(105 227 220);
-        border-radius: 6px;
-    }
-}
-
-/* content ul and li */
-.content-linux a {
-    word-break: break-all;
-}
-
-/* footer | disclaimer section */
-footer {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* list for instructions */
-ol {
-    margin-bottom: 15px;
-
-    /* max-width: 600px; */
-    & li {
-        margin-bottom: 10px;
-
-        & p {
-            margin-bottom: 20px;
-        }
-    }
-}
-
-/* summary option */
-summary::marker,
-summary:hover {
-    content: none;
-    cursor: pointer;
-}
-
-summary {
-    user-select: none;
-    color: #6b705c;
     text-align: center;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+
+    color: var(--text);
+    background-color: var(--secondary);
+    text-decoration: none;
 }
 
-details[open] summary {
-    opacity: .2;
-}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    align-items: center;
 
-#mobile {
-    display: none;
-}
+    & #disclaimerBtn {
+        backdrop-filter: blur(0.385rem);
+        border-radius: 50%;
+        outline: 1px solid hsl(60, 100%, 50%);
 
-@media screen and (min-width: 50px) and (max-width: 480px) {
-    #mobile {
-        display: block;
-    }
-
-    #desktop {
-        display: none;
-    }
-
-    body {
-        display: grid;
-        grid-template-areas:
-            "main"
-            "article"
-            "aside"
-            "footer";
-        grid-template-columns: auto;
-        padding: 15px;
-
-        & aside,
-        article,
-        footer {
-            border: none;
-            padding: 0;
-        }
-
-        & main {
+        & a {
+            padding: .3rem;
             display: grid;
-            justify-items: center;
-
-            & img {
-                /* width: 95% !important; */
-                border-bottom: none !important;
-            }
+            place-items: center;
         }
     }
 }
 
-@media screen and (min-width:481px) and (max-width: 860px) {
+section#sources li:first-child>a {
+    background-color: var(--accent);
+    color: var(--special-link);
+}
+
+section#sources li a:hover {
+    transform: translate(0, -3px);
+    box-shadow: 0 20px 80px -10px var(--accent);
+}
+
+ul.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    & li {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
     body {
-        display: grid;
-        grid-template-areas:
-            "main aside"
-            "article article"
-            "footer footer";
+        width: min(380px, calc(100% + 70px));
+
+        & h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    section#sources ul {
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 15px 15px;
     }
-}
-
-/* applies the same to all device and operating system, hopefully */
-h5#copyrightNotice {
-    font-family: serif !important;
-
-    & abbr {
-        font-family: serif !important;
-    }
-}
-
-code {
-    font-family: "Fira Code";
-    padding: 4px 12px;
-}
-
-code.warning {
-    background-color: hsla(60, 100%, 50%, 0.664);
 }
