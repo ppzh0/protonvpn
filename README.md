@@ -21,7 +21,7 @@ Proton VPN now offers credential-less logins on Android, making it easier for us
 
 ### Repository
 Repository was created at `2022-05-06T12:08:40Z`. 
-Check branch "[snap01](https://github.com/ppzh0/protonvpn/tree/snap01)" for older versions of UI of the site. 
+Check branch "[snap01](https://github.com/ppzh0/protonvpn/tree/snap01)" & "[snap02](https://github.com/ppzh0/protonvpn/tree/snap02)" for older versions of UI of the site. 
 
 See something wrong with this? Make a [pull request](https://github.com/ppzh0/protonvpn/pulls)! 
 
