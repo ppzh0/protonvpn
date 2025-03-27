@@ -13,7 +13,8 @@
     <meta property="og:url" content="https://iiap.vercel.app">
     <meta property="og:image" content="assets/img/thumbnail2.png">
     <meta property="og:type" content="article">
-    <meta property="og:description" content="Visit this page to learn more about installing ProtonVPN on Linux distros!">
+    <meta property="og:description"
+        content="Visit this page to learn more about installing ProtonVPN on Linux distros!">
 
     <link rel="stylesheet" href="./src/css/style.css">
 
@@ -120,10 +121,42 @@
                 I (or) we downloaded the ProtonVPN pages for ease of access.
             </small>
             <ol>
-                <li><a href="./etc/Ubuntu.html">Ubuntu</a></li>
                 <li><a href="./etc/Debian.html">Debian</a></li>
+                <li><a href="./etc/Ubuntu.html">Ubuntu</a></li>
                 <li><a href="./etc/Fedora.html">Fedora</a></li>
             </ol>
+        </article>
+        <article>
+            <h3>Don't know which distro you're running?</h3>
+            <p>
+                If you're not sure what Linux distribution you're running, open a terminal window and run:
+            </p>
+
+            <code>
+    <pre>cat /etc/*release</pre>
+</code>
+
+            <p>
+                In the output, look for:
+            <ul>
+                <li>
+                    <p>
+                        <strong>PRETTY_NAME</strong>: This is the name of your distribution and its version number.
+                        Proton VPN actively supports the latest versions of Debian, Ubuntu, and Fedora.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>ID_LIKE</strong>: If your distro is a derivative of another distro, you'll see its
+                        “parent” distribution(s) listed here. In the example below, KDE Neon is based on Ubuntu, which
+                        itself is based on Debian.
+                    </p>
+                </li>
+            </ul>
+            If you're using a distro that's based on one of their officially supported distros, there's a very good
+            chance it will work with no or few problems. But support may be limited.
+            </p>
+            <img src="./assets/ofc-img/linux-version-1-2.png" alt="linux-terminal" width="100%" height="auto">
         </article>
     </main>
     <footer>
