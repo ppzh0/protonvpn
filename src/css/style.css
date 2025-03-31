@@ -96,8 +96,8 @@ small {
 }
 
 /* link button styles */
-ul,
-ul li {
+#sources ul,
+#sources ul li {
     list-style: none;
     padding-inline-start: 0;
 }
