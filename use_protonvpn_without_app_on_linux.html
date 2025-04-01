@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using ProtonVPN on Linux without installing ProtonVPN app - IIAP</title>
+    <meta name="description" content="A guide on how to use ProtonVPN on Linux without installing ProtonVPN app - IIAP">
+    <meta name="keywords"
+        content="ProtonVPN, IIAP, internet access, VPN, unlimited bandwidth, no-log policy, multi-platform support">
+
+    <meta property="og:title" content="Using ProtonVPN on Linux without installing ProtonVPN app - IIAP">
+    <meta property="og:url" content="https://iiap.vercel.app">
+    <meta property="og:image" content="assets/img/thumbnail1.png">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="A guide on how to use ProtonVPN on Linux without installing ProtonVPN app - IIAP">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- Comfortaa & Poppins Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Poppins:400" rel="stylesheet">
+
+    <!-- website's favicon link -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- SEO-metadata to schema.org -->
+    <meta name=“robots” content=index, nofollow">
+    <script type="application/ld+json" id="seo-metadata" tabindex="-1">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "WebSite",
+		  "url": "https://iiap.vercel.app/",
+		  "potentialAction": {
+			"@type": "SearchAction",
+			"target": "{search_term_string}",
+			"query-input": "required name=search_term_string"
+		  },
+		  "name": "IIAP - Independent Internet Access Provider",
+		  "description": "Access ProtonVPN with unlimited bandwidth, no-log policy, multi-platform support, and Swiss-based privacy protection through IIAP.",
+		  "keywords": "ProtonVPN, IIAP, internet access, VPN, unlimited bandwidth, no-log policy, multi-platform support, Swiss-based"
+		}
+	</script>
+</head>
+
+<body>
+    <h1>Using ProtonVPN on Linux without installing ProtonVPN app - IIAP</h1>
+    <main>
+        <article>
+            <p>
+                This guide page will cover <strong>the whole process</strong> of using ProtonVPN on Linux without
+                installing the app.
+            </p>
+            <p>
+                <em>
+                    This guide was specifically written for those who <strong>have been blocked or restricted</strong>
+                    from internet access by their government or internet service provider (ISP).
+                </em>
+            </p>
+            <p>
+                This guide requires you to install “<code>network-manager-openvpn-gnome</code>” on your Linux system.
+            </p>
+        </article>
+        <article>
+            <h2>Creating a Proton Account for necessary credentials</h2>
+            <p>
+                You will have to create a Proton account. Please, follow this guide to create a Proton account:
+                <a href="./open_a_proton_account.html" target="_blank"
+                    rel="noopener noreferrer">Open a Proton account</a>
+            </p>
+        </article>
+        <article>
+            <h2>Obtaining the credentials from ProtonVPN website</h2>
+            <h3>If you have been blocked…</h3>
+            <p>
+                On your mobile device, connect to a VPN; ProtonVPN for Android is recommended since android users do not
+                need to open an account to use ProtonVPN.
+            </p>
+            <p>
+                For iOS devices, refer to your former VPN and connect to it.
+            </p>
+            <p>
+                The following steps can be done on your computer too. It is recommended if you have a stable VPN network
+                connection or unrestricted internet connection.
+            </p>
+        </article>
+        <article>
+            <h3>Phase 1: Getting your “OpenVPN / IKEv2 username” from ProtonVPN website</h3>
+
+            <ol>
+                <li>
+                    <p>
+                        Sign in to your Proton account though this link: <a href="https://account.protonvpn.com"
+                            target="_blank" rel="noopener noreferrer">https://account.protonvpn.com</a>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        On the top left corner, click the hamburger menu.
+                    </p>
+                    <img width="100%" height="auto" src="./assets/img/proton_hamburger_menu.webp"
+                        alt="Proton hamburger menu">
+                </li>
+                <li>
+                    <p>
+                        Then click on “Account”
+                    </p>
+                    <img width="100%" height="auto" src="./assets/img/click_on_account.webp" alt='Click on "Account"'>
+                </li>
+                <li>
+                    <p>
+                        Scroll down and find “OpenVPN / IKEv2 username” and copy them.
+                    </p>
+                    <img width="100%" height="auto" src="./assets/img/obtaining_credentials_reset.webp"
+                        alt='Find "OpenVPN / IKEv2 username"'>
+                </li>
+                <li>
+                    <p>
+                        Save the credentials in a text file. You can create a text file in your file manager.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Be careful <span style="text-decoration: underline solid;">not to share</span> it with
+                                anyone.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                You can only use <strong>one device at a time</strong> with the <strong>free
+                                    subscription</strong> so if you cannot connect to VPN on your device, <strong>try
+                                    resetting the credentials</strong> (step 4)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong style="color: red;">DO NOT TRANSFER IT THROUGH UNSECURE NETWORKS.</strong>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </article>
+        <article>
+            <h3>Phase 2: Downloading necessary configuration files from ProtonVPN website</h3>
+            <ol>
+                <li>
+                    <p>
+                        Through the hamburger menu, go to the “Downloads” page.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Scroll down to “OpenVPN configuration files” and select your preferred option. In our case, it
+                        is <strong>GNU/Linux</strong>.
+                    </p>
+                    <img width="100%" height="auto" src="./assets/img/openvpn_config_files.webp"
+                        alt="Select OpenVPN configuration file">
+                </li>
+                <li>
+                    <p>
+                        Select your preferred protocol. Leave the config file option on default.
+                    </p>
+                    <img width="100%" height="auto" src="./assets/img/selecting_protocols.webp"
+                        alt="Select your preferred protocol">
+                    <ul>
+                        <li>UDP for faster VPN connection (<em>Difficult to connect, Fast</em>).</li>
+                        <li>TCP for connecting through heavily blocked networks. (<em>Connect Easily, Slow</em>)</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        Download your preferred country's server config file.
+                    </p>
+                </li>
+            </ol>
+            <p>
+                We strongly recommend downloading <strong>at least one config file</strong> for all the three free
+                countries.
+                Send the config files to your computer through your preferred methods.
+            </p>
+        </article>
+        <article>
+            <h2>Transferring credentials to your computer</h2>
+            <p>
+                To transfer the ProtonVPN credentials to your computer (Linux device) precisely follow the instructions
+                below.
+            </p>
+            <h3>Transferring through Bluetooth</h3>
+            <ol>
+                <li>
+                    <p>
+                        Turn on Bluetooth on both devices: your phone and computer.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        On your mobile device, open the file manager and share the text file with Bluetooth.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        On your computer, go to settings and find the Bluetooth transfer setting/option.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Follow the on screen instructions to receive the file.
+                    </p>
+                </li>
+            </ol>
+
+            <h3>Transferring through Telegram </h3>
+            <ol>
+                <li>
+                    <p>
+                        On your mobile device, open telegram.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Find your “Saved Messages” chat in telegram.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Send the credentials text file to “Saved Messages.”
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        On your computer, install telegram and login to your account.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Save the credentials text file to your document folder.
+                    </p>
+                </li>
+            </ol>
+            <p>
+                We do not recommend transferring the credentials as it is, since that is easier to be leaked or decoded
+                through unsecured networks.
+            </p>
+        </article>
+        <article>
+            <h2>Setting up the config file on your Linux device</h2>
+            <p>
+                This section requires you to have the config files and credentials on your computer.
+            <ul>
+                <li><a href="#GNOMEUI">GNOME UI</a></li>
+                <li><a href="#KDEPlasmaUI">KDE Plasma UI</a></li>
+                <li><a href="#CinnamonUI">Cinnamon UI</a></li>
+            </ul>
+            </p>
+            <section>
+                <h3>Don't know what GUI you're running on?</h3>
+                <p>
+                    If you do not know which GUI you're using, run the following command in the terminal:
+                </p>
+
+                <code style="background-color: #000; color: #fff;">cat /etc/*release</code>
+
+                <p>And look for <strong>PRETTY_NAME</strong> or related terms.</p>
+                <img width="100%" height="auto" src="./assets/ofc-img/linux-version-1-2.png" alt="Check linux distro">
+            </section>
+            <section>
+                <h4 id="GNOMEUI">GNOME UI</h4>
+                <ol>
+                    <li>
+                        <p>Go to
+                            <strong>Settings</strong>→⁠<strong>Network</strong>→<strong>VPN</strong>→<strong>+</strong>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Choose “<strong>Import from file…</strong>”</p>
+                    </li>
+                    <li>
+                        <p>Select your .ovpn file</p>
+                    </li>
+                    <li>
+                        <p>A pop-up window will request you to fill in the credentials</p>
+                    </li>
+                    <li>
+                        <p>Fill in the “<strong>User name</strong>” and “<strong>Password</strong>” as obtained from
+                            ProtonVPN website</p>
+                    </li>
+                    <li>
+                        <p>Tweak the server configuration if you know what you're doing</p>
+                    </li>
+                    <li>
+                        <p>Click the “<strong>Save</strong>” button</p>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h4 id="KDEPlasmaUI">KDE Plasma UI</h4>
+                <ol>
+                    <li>
+                        <p>Navigate to System <strong>Settings</strong>→<strong>Connections</strong>→<strong>Add new
+                                connection</strong> (<strong>+</strong>)→<strong>Import VPN Connection</strong></p>
+                    </li>
+                    <li>
+                        <p>Select your .ovpn file</p>
+                    </li>
+                    <li>
+                        <p>A pop-up window will come up</p>
+                    </li>
+                    <li>
+                        <p>Change “<strong>Connection Type</strong>” to “<strong>Password with Certificates
+                                (TLS)</strong>” if not</p>
+                    </li>
+                    <li>
+                        <p>Fill in your “<strong>Username</strong>” and “<strong>Password</strong>” as obtained from
+                            ProtonVPN website</p>
+                    </li>
+                    <li>
+                        <p>Then click “<strong>Apply</strong>”</p>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h4 id="CinnamonUI">Cinnamon UI</h4>
+                <ol>
+                    <li>
+                        <p>Search for “Network Settings” or click on the WiFi icon (bottom right) and click
+                            <strong>Network Settings</strong>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Click on plus (<strong>+</strong>) icon</p>
+                    </li>
+                    <li>
+                        <p>Choose “<strong>Import from file…</strong>”</p>
+                    </li>
+                    <li>
+                        <p>Select your .ovpn file</p>
+                    </li>
+                    <li>
+                        <p>Fill in the “<strong>Username</strong>” and “<strong>Password</strong>” as obtained from
+                            ProtonVPN website</p>
+                    </li>
+                    <li>
+                        <p>Then click on “<strong>Add</strong>”</p>
+                    </li>
+                </ol>
+            </section>
+        </article>
+        <article>
+            <h3>Activating VPN connections on your Linux system</h3>
+            <p>
+                Try to connect to all the connections or countries that you have configured on your system one by one.
+                That ensures seamless VPN connectivity at all times.
+            </p>
+        </article>
+        <article>
+            <h2>Conclusion</h2>
+            <p>
+                As of March 2025, there are still connectivity blockages on some services in Myanmar. ProtonVPN is featured on
+                this website since it provides privacy focused VPN connectivity, allowing activists and journalists to
+                freely execute their actions without being exposed to the so called “government” of this time.
+            </p>
+        </article>
+
+    </main>
+    <footer>
+        <h5>IIAP - Independent Internet Access Provider</h5>
+        <ul class="footer-links">
+            <li><a href="./about.html">About this website</a></li>
+            <li><a href="./open_a_proton_account.html">Open a proton account</a></li>
+            <li><a href="./installation_for_linux.html">Installation for linux</a></li>
+            <li><a target="_blank" href="https://github.com/ppzh0/protonvpn">Website's Repository</a></li>
+            <li><a target="_blank" href="https://github.com/ProtonVPN">ProtonVPN GitHub</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
