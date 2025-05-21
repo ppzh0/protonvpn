@@ -177,3 +177,18 @@ ul.footer-links {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* EXTRA */
+.under-maintenance * {
+    opacity: 0.1;
+}
+
+.under-maintenance::before {
+    content: "Links are undergoing updates, please wait patiently.";
+    display: block;
+    padding: 0.4rem;
+    font: bold 1.25rem/1 monospace;
+    border: 5px solid red;
+    color: yellow;
+    background-color: hsla(0, 0%, 0%, 0.85);
+}
