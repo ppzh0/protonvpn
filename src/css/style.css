@@ -179,8 +179,16 @@ ul.footer-links {
 }
 
 /* EXTRA */
+.under-maintenance {
+    cursor: not-allowed;
+    & a:hover {
+        cursor: not-allowed;
+    }
+}
+
 .under-maintenance * {
     opacity: 0.1;
+    user-select: none;
 }
 
 .under-maintenance::before {
