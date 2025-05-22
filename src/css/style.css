@@ -200,3 +200,8 @@ ul.footer-links {
     color: yellow;
     background-color: hsla(0, 0%, 0%, 0.85);
 }
+
+a[href='/'] {
+    display: block;
+    padding: .4rem .8rem;
+}
