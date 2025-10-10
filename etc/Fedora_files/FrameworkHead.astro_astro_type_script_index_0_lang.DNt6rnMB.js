@@ -1,0 +1,1 @@
+import{P as t}from"./singleton.BrRCe01M.js";import{x as e}from"./logger.JsxTbz0I.js";import"./_commonjsHelpers.D6-XlEtG.js";const r=o=>{switch(o){case"protonvpn-com":return"https://telemetry.protonvpn.com/payload";case"lumo-proton-me":case"proton-me":default:return"https://telemetry.proton.me/payload"}};t({endpoint:r("protonvpn-com"),appVersion:e,debug:!1});
